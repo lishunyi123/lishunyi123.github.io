@@ -1,15 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://lishunyi123.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-05-04T06:40:19.805Z</updated>
+    <title>順順のBlog</title>
+    <updated>2020-05-05T06:11:06.938Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://lishunyi123.github.io"/>
     <link rel="self" href="https://lishunyi123.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://lishunyi123.github.io/images/avatar.png</logo>
     <icon>https://lishunyi123.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 順順のBlog</rights>
+    <entry>
+        <title type="html"><![CDATA[Java中Map的遍历方式]]></title>
+        <id>https://lishunyi123.github.io/post/java-zhong-map-de-bian-li-fang-shi/</id>
+        <link href="https://lishunyi123.github.io/post/java-zhong-map-de-bian-li-fang-shi/">
+        </link>
+        <updated>2020-05-05T03:35:33.000Z</updated>
+        <summary type="html"><![CDATA[<!-- ![](http://q9oql9zw4.bkt.clouddn.com/imagesurface-rf87AkJ3tqY-unsplash.jpg) -->
+]]></summary>
+        <content type="html"><![CDATA[<!-- ![](http://q9oql9zw4.bkt.clouddn.com/imagesurface-rf87AkJ3tqY-unsplash.jpg) -->
+<!-- more -->
+<ul>
+<li>
+<p>首先定义一个HashMap</p>
+<pre><code class="language-java">Map&lt;String, Object&gt; map = new HashMap();
+map.put(&quot;string&quot;, object);
+</code></pre>
+</li>
+<li>
+<p>二次取值方式</p>
+<pre><code class="language-java">for (String key : map.keySet()) {
+		System.out.println(&quot;key:&quot; + key + &quot;vlaue:&quot; + map.get(key));
+}
+</code></pre>
+</li>
+<li>
+<p>Iterator遍历</p>
+<pre><code class="language-java">Iterator&lt;Map.Entry&lt;String, Object&gt;&gt; iterator = map.entrySet().iterator();
+while (iterator.hasNext()) {
+    Map.Entry&lt;String, Object&gt; entry = iterator.next();
+    System.out.println(&quot;key:&quot; + entry.getKey() + &quot;value:&quot; + entry.getValue());
+}
+</code></pre>
+</li>
+<li>
+<p>entrySet遍历（推荐）</p>
+<pre><code class="language-java">for (Map.Entry&lt;String, Object&gt; entry : map.entrySet()) {
+    System.out.println(&quot;key:&quot; + entry.getKey() + &quot;value:&quot; + entry.getValue());
+}
+</code></pre>
+</li>
+<li>
+<p>Map.values取值遍历（只能遍历value，不能遍历key）</p>
+<pre><code class="language-java">for (Object o : map.values()) {
+    System.out.println(&quot;value:&quot; + o);
+}
+</code></pre>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Redis官方客户端Redisson实现分布式锁的方案]]></title>
+        <id>https://lishunyi123.github.io/post/redis-guan-fang-ke-hu-duan-redisson-shi-xian-fen-bu-shi-suo-de-fang-an/</id>
+        <link href="https://lishunyi123.github.io/post/redis-guan-fang-ke-hu-duan-redisson-shi-xian-fen-bu-shi-suo-de-fang-an/">
+        </link>
+        <updated>2020-05-04T06:54:46.000Z</updated>
+        <content type="html"><![CDATA[<p>Java的分布式锁实现方案普遍上有两种，一种是Redis锁，一种是Zookeeper锁，本文主要讲通过Redis来实现分布式锁的方案，Redisson</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://lishunyi123.github.io/post/hello-gridea/</id>
