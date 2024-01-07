@@ -65,3 +65,6 @@ CCTV17,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226198/index.m3u8
 综合,http://[2409:8087:4c0a:22:1::11]:6410/170000001115/UmaiCHAN638072216f7da/index.m3u8?AuthInfo=9kOOdBn7MFF%2F2bWjKgahUUAdKgLqNB5aOAUhcp5CeNLx3R3LdIBdA5q61lut1LwZcw4SC2tJubc%2Bq5t%2F61jvWCtjrJL0x%2BHncPgdmcbBW9I
 武汉新闻,http://stream.appwuhan.com/1tzb/sd/live.m3u8
 武汉经济,http://stream.appwuhan.com/4tzb/sd/live.m3u8
+电影,#genre#
+甄子丹,http://epg.112114.xyz/huya/11352935
+徐克,http://epg.112114.xyz/huya/11352909
